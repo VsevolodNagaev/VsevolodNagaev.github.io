@@ -7,8 +7,16 @@
           "time": time
       };
 
-      // Convert the JSON object to a string
-      var jsonString = JSON.stringify(jsonData);
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            }
+      };
+      xhttp.open("POST", "https://your-esp32-ip-address/data", true);
+      xhttp.setRequestHeader("Content-type", "application/json");
+      xhttp.send(JSON.stringify(jsonData));
+
 
       // Log the JSON string to the console
       console.log(jsonString);
