@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Page</title>
-  </head>
-  <body>
     <script>
+      alert("Hello, world!");
       var data = "Hello World"; // Replace with your actual data
       var time = new Date().toISOString(); // Get the current time in ISO format
 
@@ -21,5 +15,3 @@
       // Log the JSON string to the console
       console.log(jsonString);
     </script>
-  </body>
-</html>
