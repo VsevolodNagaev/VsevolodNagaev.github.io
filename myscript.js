@@ -1,4 +1,3 @@
-      alert("Hello, world!");
       var data = "Hello World"; // Replace with your actual data
       var time = new Date().toISOString(); // Get the current time in ISO format
 
