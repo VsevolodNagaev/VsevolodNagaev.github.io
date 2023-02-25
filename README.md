@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JSON Example</title>
-	<script>
-		var data = "Hello World"; 
-		var time = new Date().toISOString(); 
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+  </head>
+  <body>
+    <script>
+      var data = "Hello World"; // Replace with your actual data
+      var time = new Date().toISOString(); // Get the current time in ISO format
 
-		
-		var jsonData = {
-			"data": data,
-			"time": time
-		};
+      // Create a JSON object with data and time properties
+      var jsonData = {
+          "data": data,
+          "time": time
+      };
 
-		var jsonString = JSON.stringify(jsonData);
-		console.log(jsonString);
-	</script>
-</head>
-<body>
-	<p>Open the developer console to see the JSON output.</p>
-</body>
+      // Convert the JSON object to a string
+      var jsonString = JSON.stringify(jsonData);
+
+      // Log the JSON string to the console
+      console.log(jsonString);
+    </script>
+  </body>
 </html>
